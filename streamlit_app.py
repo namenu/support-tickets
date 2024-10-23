@@ -330,3 +330,22 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    # Streamlit 스타일 숨기기
+    hide_streamlit_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+    """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+    # Streamlit 스타일 숨기기
+    hide_streamlit_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+    """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
